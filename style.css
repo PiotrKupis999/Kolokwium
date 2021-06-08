@@ -10,3 +10,11 @@
     margin-bottom: 10px; 
     margin-right: 10px; 
 }
+
+.cyfra{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
