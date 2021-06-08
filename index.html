@@ -10,7 +10,7 @@
 <body>
     <div id="app">
         <div class="container" v-for='r in rows'>
-            <div class="cell" v-for='c in columns'>
+            <div :class="[active[0]==r&&active[1]==c ? 'active' : 'cell']" v-for='c in columns'>
                 <div class="cyfra">
                     {{r}},{{c}}
                 </div>
@@ -24,10 +24,12 @@
             data: {
                 message: '1',
                 rows: 10,
-                columns: 10
+                columns: 10,
+                active:[1,1]
             }
         })
     </script>
 </body>
 
 </html>
+
